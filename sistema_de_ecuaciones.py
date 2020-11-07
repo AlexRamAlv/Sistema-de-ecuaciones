@@ -1,24 +1,30 @@
 import metodos as mtd
 
-"""vamos a calcular sistemas de ecuaciones lineales con dos incógnitas'
-Solo necesitas ingresar los coeficientes de cada ecuacion segun se solicite'
-Las ecuaciones tienen la forma: ax + by = c"""
+""" Estas lines de código calcula sistemas de ecuaciones lineales con dos incógnitas
+    Solo se debe ingresar los coeficientes de cada ecuacion según se solicite
+    Las ecuaciones tienen la forma: ax + by = c"""
 
 #ecuación no 1
 print('\n Digita los coeficientes\n')
-a = int(input('Coeficeinte de X1: '))
-b = int(input('Coeficeinte de Y1: '))
-c = int(input('Término independiente de la ecuacion 1: '))
+a = float(input('Coeficeinte de X1: '))
+b = float(input('Coeficeinte de Y1: '))
+c = float(input('Término independiente de la ecuacion 1: '))
 
 mtd.muestra_ecuaciones(a, b, c)
 
 #ecuación no 2
-a1 = int(input('Coeficeinte de X2: '))
-b1 = int(input('Coeficeinte de Y2: '))
-c1 = int(input('Término independiente de la ecuacion 2: '))
+a1 = float(input('Coeficeinte de X2: '))
+b1 = float(input('Coeficeinte de Y2: '))
+c1 = float(input('Término independiente de la ecuacion 2: '))
 
+#método que muestra las ecuaciones
 mtd.muestra_ecuaciones(a1, b1, c1)
 
-#metodo de reducción
+#método de reducción
 mtd.metodo_reduccion(a, b, c, a1, b1, c1)
+
+#método gráfico
+mtd.metodo_grafico(a, b, c, a1, b1, c1)
+
+
 
