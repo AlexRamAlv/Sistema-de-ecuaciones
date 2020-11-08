@@ -1,4 +1,5 @@
 import metodos as mtd
+import time
 
 """ Estas lines de código calcula sistemas de ecuaciones lineales con dos incógnitas
     Solo se debe ingresar los coeficientes de cada ecuacion según se solicite
@@ -21,10 +22,16 @@ c1 = float(input('Término independiente de la ecuacion 2: '))
 mtd.muestra_ecuaciones(a1, b1, c1)
 
 #método de reducción
+tiempo_inicial = time.time()
 mtd.metodo_reduccion(a, b, c, a1, b1, c1)
+tiempo_final = time.time()
+print(f'el tiempo de resolver la ecuacione fue de {tiempo_final - tiempo_inicial}')
 
 #método gráfico
+tiempo_inicial = time.time()
 mtd.metodo_grafico(a, b, c, a1, b1, c1)
+tiempo_final = time.time()
+print(f'el tiempo que duraste con el gráfico abierto fue de {tiempo_final - tiempo_inicial}')
 
 
 
