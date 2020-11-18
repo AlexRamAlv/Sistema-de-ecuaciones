@@ -25,13 +25,13 @@ mtd.muestra_ecuaciones(a1, b1, c1)
 tiempo_inicial = time.time()
 mtd.metodo_reduccion(a, b, c, a1, b1, c1)
 tiempo_final = time.time()
-print(f'el tiempo de resolver la ecuacione fue de {tiempo_final - tiempo_inicial}')
+print(f'\n--el tiempo de resolver el sistema de ecuaciones fue de {tiempo_final - tiempo_inicial}--')
 
 #método gráfico
-tiempo_inicial = time.time()
-mtd.metodo_grafico(a, b, c, a1, b1, c1)
-tiempo_final = time.time()
-print(f'el tiempo que duraste con el gráfico abierto fue de {tiempo_final - tiempo_inicial}')
+# tiempo_inicial = time.time()
+# mtd.metodo_grafico(a, b, c, a1, b1, c1)
+# tiempo_final = time.time()
+# print(f'el tiempo que duraste con el gráfico abierto fue de {tiempo_final - tiempo_inicial}')
 
 
 
