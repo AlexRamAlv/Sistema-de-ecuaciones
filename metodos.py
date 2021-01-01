@@ -1,18 +1,27 @@
 import matplotlib.pyplot as plt
 
+def decorator(func):
+  def wrap(a, b, c):
+    print('=' * 45 )
+    func(a, b, c)
+    print(45 * '='+'\n')
+
+  return wrap
+
+@decorator
 def muestra_ecuaciones(a, b, c):
   
-  print(45 *'=')
   a = a 
   b = b  
   c = c
   if b < 0:
-    text = 'Esta es tu ecuación: => {}x {}y = {}'
-  else:
-    text = 'Esta es tu ecuación: => {}x +{}y = {}'
-  print(text.format(a, b, c))
-  print(45 * '='+'\n')
+    text = 'Esta es tu ecuación: => {}x {}y = {}'.format(a, b, c)
 
+  else:
+    text = 'Esta es tu ecuación: => {}x +{}y = {}'.format(a, b, c)
+
+  print(text)
+ 
 def metodo_reduccion(a, b, c, a1, b1, c1):
 
   if b < 0 and b1 > 0:

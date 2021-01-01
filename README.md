@@ -5,7 +5,7 @@ Con el tiempo se irá haciendo mejoras hasta tener un programa que no solo resue
 Actualmente el programa puede calcular las soluciones de las variables que resuleven el sistema de ecuaciones siempre y cuando se introduzcan enteros y deciamles.
 Las fracciones no están permitidas por el momento y obviamente los textos.
 
-<h2><strong>Propósito</strong></h2>
+**Propósito**
 
    Resolver sistema de ecuaciones lineales con dos incognitas.
    Mostrar el paso a paso de los diferentes métodos que existen para estos fines.
